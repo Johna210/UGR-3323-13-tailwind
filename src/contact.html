@@ -7,11 +7,31 @@
     <link rel="stylesheet" href="/src/CSS/styles.css" />
   </head>
   <body class="bg-primary-100 text-gray-100">
-    <nav class="m-5 flex justify-between mb-20">
-      <h3 class="font-bold text-3xl">
-        <span class="text-primary-200">Y</span>ohannes
+    <nav
+      class="m-5 grid grid-cols-3 lg:flex lg:justify-between sticky top-0 bg-primary-100"
+    >
+      <h3 class="font-bold text-3xl col-span-1">
+        <span class="text-primary-200 font-logo">Y</span>ohannes
       </h3>
-      <ul class="flex gap-4">
+
+      <div class="col-start-3 flex justify-end items-center" id="burger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="26"
+          width="26"
+          viewBox="0 0 448 512"
+          class="fill-primary-200 cursor-pointer lg:hidden"
+        >
+          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+      </div>
+      <ul
+        class="mt-4 col-start-2 leading-10 self-center place-self-center font-nav hidden lg:flex lg:items-center lg:gap-5"
+        id="menu"
+      >
         <li>
           <a
             class="hover:text-primary-200 text-neutral-300"
@@ -57,8 +77,17 @@
       </ul>
     </nav>
 
-    <main class="pl-20 flex justify-between">
-      <section class="order-2 text-center pr-82 flex flex-col gap-5">
+    <main
+      class="flex flex-col md:mt-10 md:pl-20 md:grid grid-cols-2 md:auto-rows-min md:gap-10"
+    >
+      <h2
+        class="text-3xl font-bold text-primary-200 font-logo col-span-2 mt-10 self-center"
+      >
+        Contact Me
+      </h2>
+      <div
+        class="md:col-start-2 md:col-end-3 flex flex-col justify-center items-center gap-5 w-80 self-center mt-2"
+      >
         <h4>Name:</h4>
         <input type="text" placeholder="Type Name" class="input" />
         <h4>Email:</h4>
@@ -71,19 +100,22 @@
           type="text"
           id="emailLink"
           placeholder="Write Message"
-          class="textArea mb-6"
+          class="textArea mb-2"
         ></textarea>
         <div>
-          <a href="mailto:solomonjohna21@gmail.com" class="btn">Send Email</a>
+          <a href="mailto:solomonjohna21@gmail.com" class="btn mb-10"
+            >Send Email</a
+          >
         </div>
-      </section>
-      <article class="order-1 flex flex-col gap-10">
-        <h2 class="text-3xl font-bold text-primary-200 mb-10">Contact Me</h2>
+      </div>
+      <div
+        class="md:col-start-1 md:col-end-2 md:row-start-2 flex flex-col gap-5 mt-5 self-center md:self-start"
+      >
         <h4>Email - solomonjohna21@gmail.com</h4>
         <h4>
           Phone number - +251911359492 <a href="tel:+251911359492">call</a>
         </h4>
-        <div class="flex gap-3">
+        <div class="flex gap-3 row-start-2">
           <h4>Social Media</h4>
           <div>
             <a href=""
@@ -146,7 +178,8 @@
             ></a>
           </div>
         </div>
-      </article>
+      </div>
     </main>
+    <script src="/src/JS/index.js"></script>
   </body>
 </html>

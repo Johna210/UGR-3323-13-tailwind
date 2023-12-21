@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .card {
-  @apply w-80  text-wrap flex flex-col gap-3 items-start rounded mb-10 pb-2 pl-2;
+  @apply w-80 h-new text-wrap flex flex-col gap-3 items-start rounded mb-10 pb-2 pl-2;
 }
 
 .input {
@@ -17,5 +17,5 @@
 }
 
 .btn {
-  @apply border border-primary-200 rounded-md font-bold p-2 cursor-pointer hover:bg-primary-200;
+  @apply border border-primary-200 rounded-md font-bold p-1 cursor-pointer hover:bg-primary-200 mb-2;
 }

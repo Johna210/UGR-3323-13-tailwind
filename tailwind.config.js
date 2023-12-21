@@ -11,7 +11,8 @@ module.exports = {
       },
       spacing: {
         82: "18.75rem",
-        92: "31.25",
+        new: "24.5625",
+        92: "37.5",
       },
       fontFamily: {
         logo: ["Righteous"],
