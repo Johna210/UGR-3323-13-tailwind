@@ -3,33 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>About me</title>
+    <link rel="stylesheet" href="/src/CSS/styles.css" />
   </head>
-  <body>
-    <nav>
-      <h3>Yohannes</h3>
-      <ul>
-        <li><a href="/src/index.html">Home</a></li>
-        <li><a href="/src/aboutme.html">About me</a></li>
-        <li><a href="/src/portfolio.html">Portfolio</a></li>
-        <li><a href="/src/resume.html">Resume</a></li>
-        <li><a href="/src/hobbies.html">Hobbies</a></li>
-        <li><a href="/src/contact.html">Contact</a></li>
+  <body class="bg-primary-100 text-gray-100">
+    <nav class="m-5 flex justify-between mb-20">
+      <h3 class="font-bold text-3xl">
+        <span class="text-primary-200">Y</span>ohannes
+      </h3>
+      <ul class="flex gap-4">
+        <li>
+          <a
+            class="hover:text-primary-200 text-neutral-300"
+            href="/src/index.html"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-primary-200 text-neutral-300"
+            href="/src/aboutme.html"
+            >About me</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-primary-200 text-neutral-300"
+            href="/src/portfolio.html"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-primary-200 text-neutral-300"
+            href="/src/resume.html"
+            >Resume</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-primary-200 text-neutral-300"
+            href="/src/hobbies.html"
+            >Hobbies</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-primary-200 text-neutral-300"
+            href="/src/contact.html"
+            >Contact</a
+          >
+        </li>
       </ul>
     </nav>
 
-    <main>
-      <article>
-        <h1>About me</h1>
-        <figure id="profile-image">
-          <img
-            src="/src/images/photo.jpg"
-            alt="profile image"
-            width="300"
-            height="400"
-          />
-        </figure>
-        <p class="aboutme">
+    <main class="mx-10">
+      <article class="grid grid-cols-2 gap-5 auto-rows-min">
+        <h1
+          class="text-primary-200 text-3xl font-bold pl-20 col-start-1 col-end-2 mb-20"
+        >
+          About me
+        </h1>
+        <img
+          src="/src/images/photo.jpg"
+          alt="profile image"
+          width="300"
+          height="400"
+          class="col-start-2 col-end-3 row-start-2 row-end-4"
+        />
+        <p class="col-start-1 col-end-2 h-fit">
           I am a passionate and experienced full-stack web developer with a
           knack for crafting user-centric, high-quality web applications. My
           expertise spans the entire development lifecycle, from conception to
@@ -38,10 +80,14 @@
           enabling me to tackle projects of varying complexities.
         </p>
 
-        <section>
-          <div id="skills">
-            <h3>Skills</h3>
-            <ul>
+        <section class="col-start-1 col-end-2">
+          <div>
+            <h3 class="text-lg font-bold underline decoration-primary-200 mb-2">
+              Skills
+            </h3>
+            <ul
+              class="mb-5 text-md leading-relaxed list-disc marker:text-primary-200"
+            >
               <li>Programming Languages: Python, Java, JavaScript, C</li>
               <li>Front-end development: HTML, CSS, JavaScript, React</li>
               <li>Back-end development: Node.js, Express</li>
@@ -50,9 +96,13 @@
               <li>Problem-solving</li>
             </ul>
           </div>
-          <div id="experience">
-            <h3>Experience</h3>
-            <ul>
+          <div>
+            <h3 class="text-lg font-bold underline decoration-primary-200">
+              Experience
+            </h3>
+            <ul
+              class="mb-5 text-md leading-relaxed list-disc marker:text-primary-200"
+            >
               <li>Over 2 years of experience as a full-stack web developer.</li>
               <li>
                 Worked on a variety of projects ranging from small to enterprise
@@ -65,9 +115,13 @@
             </ul>
           </div>
 
-          <div id="education">
-            <h3>Education</h3>
-            <ul>
+          <div>
+            <h3 class="text-lg font-bold underline decoration-primary-200">
+              Education
+            </h3>
+            <ul
+              class="mb-5 text-md leading-relaxed list-disc marker:text-primary-200"
+            >
               <li>Primary School - Ethio National School</li>
               <li>Secondary School - Ethio National School</li>
               <li>

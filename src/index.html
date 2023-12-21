@@ -4,32 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
+    <link rel="stylesheet" href="/src/CSS/styles.css" />
   </head>
-  <body>
-    <nav>
-      <h3>Yohannes</h3>
-      <ul>
-        <li><a href="/src/index.html">Home</a></li>
-        <li><a href="/src/aboutme.html">About me</a></li>
-        <li><a href="/src/portfolio.html">Portfolio</a></li>
-        <li><a href="/src/resume.html">Resume</a></li>
-        <li><a href="/src/hobbies.html">Hobbies</a></li>
-        <li><a href="/src/contact.html">Contact</a></li>
+  <body class="bg-primary-100 text-gray-100">
+    <nav class="m-5 flex justify-between">
+      <h3 class="font-bold text-3xl">
+        <span class="text-primary-200 font-logo">Y</span>ohannes
+      </h3>
+      <ul class="flex gap-4 font-nav">
+        <li>
+          <a
+            class="hover:text-primary-200 text-neutral-300"
+            href="/src/index.html"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-primary-200 text-neutral-300"
+            href="/src/aboutme.html"
+            >About me</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-primary-200 text-neutral-300"
+            href="/src/portfolio.html"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-primary-200 text-neutral-300"
+            href="/src/resume.html"
+            >Resume</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-primary-200 text-neutral-300"
+            href="/src/hobbies.html"
+            >Hobbies</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-primary-200 text-neutral-300"
+            href="/src/contact.html"
+            >Contact</a
+          >
+        </li>
       </ul>
     </nav>
-    <main>
-      <figure class="photo">
+    <main class="flex items-center gap-20 mt-40 justify-center font-logo">
+      <figure>
         <img
           src="/src/images/photo.jpg"
           alt="A personal photo of Yohannes"
-          width="300"
-          height="300"
-          style="border-radius: 50%"
+          class="size-82 rounded-full"
         />
       </figure>
-      <div class="description">
-        <h2>Hi, I'm Yohannes Solomon</h2>
-        <h1>A Full-stack Web Developer</h1>
+      <div class="text-center flex flex-col gap-6">
+        <h2 class="text-3xl font-bold">
+          Hi, I'm <span class="text-primary-200">Yohannes Solomon</span>
+        </h2>
+        <h1 class="text-2xl font-bold">A Full-stack Web Developer</h1>
         <p>A passionate Web developer based in Addis Ababa , Ethiopia</p>
       </div>
     </main>

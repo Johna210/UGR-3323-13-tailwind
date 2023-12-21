@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500;1,600&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  @apply w-80  text-wrap flex flex-col gap-3 items-start rounded mb-10 pb-2 pl-2;
+}
+
+.input {
+  @apply w-64 h-8 bg-zinc-500 text-gray-50 placeholder-gray-200;
+}
+
+.textArea {
+  @apply w-64 h-60 bg-zinc-500 text-gray-50 placeholder-gray-200;
+}
+
+.btn {
+  @apply border border-primary-200 rounded-md font-bold p-2 cursor-pointer hover:bg-primary-200;
+}

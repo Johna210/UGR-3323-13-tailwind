@@ -4,95 +4,148 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hobbies</title>
+    <link rel="stylesheet" href="/src/CSS/styles.css" />
   </head>
-  <body>
-    <nav>
-      <h3>Yohannes</h3>
-      <ul>
-        <li><a href="/src/index.html">Home</a></li>
-        <li><a href="/src/aboutme.html">About me</a></li>
-        <li><a href="/src/portfolio.html">Portfolio</a></li>
-        <li><a href="/src/resume.html">Resume</a></li>
-        <li><a href="/src/hobbies.html">Hobbies</a></li>
-        <li><a href="/src/contact.html">Contact</a></li>
+  <body class="bg-primary-100 text-gray-100">
+    <nav class="m-5 flex justify-between mb-20">
+      <h3 class="font-bold text-3xl">
+        <span class="text-primary-200">Y</span>ohannes
+      </h3>
+      <ul class="flex gap-4">
+        <li>
+          <a
+            class="hover:text-primary-200 text-neutral-300"
+            href="/src/index.html"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-primary-200 text-neutral-300"
+            href="/src/aboutme.html"
+            >About me</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-primary-200 text-neutral-300"
+            href="/src/portfolio.html"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-primary-200 text-neutral-300"
+            href="/src/resume.html"
+            >Resume</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-primary-200 text-neutral-300"
+            href="/src/hobbies.html"
+            >Hobbies</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-primary-200 text-neutral-300"
+            href="/src/contact.html"
+            >Contact</a
+          >
+        </li>
       </ul>
     </nav>
-    <main>
-      <article id="hobbies">
-        <h2>Hobbies</h2>
-        <p>
-          In my leisure time, I immerse myself in a variety of hobbies that fuel
-          my passion for creativity and personal growth. Like
-        </p>
-      </article>
+    <main class="pl-20 grid grid-cols-3">
+      <h2 class="text-3xl font-bold text-primary-200 mb-5 col-span-3">
+        Hobbies
+      </h2>
+      <p class="col-span-3">
+        In my leisure time, I immerse myself in a variety of hobbies that fuel
+        my passion for creativity and personal growth. Like
+      </p>
 
-      <div class="hobbies">
-        <header class="title"><h3>Football ⚽</h3></header>
-        <figure class="hobby-pic">
-          <img
-            src="/src/images/Football.jpg"
-            alt="an image of football"
-            width="300"
-            height="300"
-          />
-        </figure>
-        <div class="hobby-description">
-          <p>
-            The thrill of competition, the camaraderie of teamwork, and the
-            beauty of athleticism make football an exhilarating and rewarding
-            sport.
-          </p>
+      <div class="col-span-3 mt-8 grid grid-cols-3">
+        <div class="card">
+          <header>
+            <h3 class="text-lg font-bold underline decoration-primary-200">
+              Football ⚽
+            </h3>
+          </header>
+          <figure>
+            <img
+              src="/src/images/Football.jpg"
+              alt="an image of football"
+              class="w-82 h-82"
+            />
+          </figure>
+          <div>
+            <p class="text-gray-300">
+              The thrill of competition, the camaraderie of teamwork, and the
+              beauty of athleticism make football an exhilarating and rewarding
+              sport.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="hobbies">
-        <header class="title"><h3>Photography 📸</h3></header>
-        <figure class="hobby-pic">
-          <img
-            src="/src/images/Camera.jpg"
-            alt="an image of a camera"
-            width="300"
-            height="300"
-          />
-        </figure>
-        <div class="hobby-description">
-          <p>
-            Books provide an escape into new worlds, expand my knowledge, and
-            offer solace through the power of words.
-          </p>
+        <div class="card">
+          <header>
+            <h3 class="text-lg font-bold underline decoration-primary-200">
+              Photography 📸
+            </h3>
+          </header>
+          <figure>
+            <img
+              src="/src/images/Camera.jpg"
+              alt="an image of a camera"
+              class="w-82 h-82"
+            />
+          </figure>
+          <div>
+            <p class="text-gray-300">
+              Photography allows me to express my creativity, explore different
+              perspectives, and preserve precious memories.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="hobbies">
-        <header class="title"><h3>Books 📙</h3></header>
-        <figure class="hobby-pic">
-          <img
-            src="/src/images/Book.jpg"
-            alt="an image of books"
-            width="300"
-            height="300"
-          />
-        </figure>
-        <div class="hobby-description">
-          <p>
-            Photography allows me to express my creativity, explore different
-            perspectives, and preserve precious memories.
-          </p>
+        <div class="card">
+          <header>
+            <h3 class="text-lg font-bold underline decoration-primary-200">
+              Books 📙
+            </h3>
+          </header>
+          <figure>
+            <img
+              src="/src/images/Book.jpg"
+              alt="an image of books"
+              class="w-82 h-82"
+            />
+          </figure>
+          <div>
+            <p class="text-gray-300">
+              Books provide an escape into new worlds, expand my knowledge, and
+              offer solace through the power of words.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="hobbies">
-        <header class="title"><h3>Gaming 🎮</h3></header>
-        <figure class="hobby-pic">
-          <img
-            src="/src/images/Controller.jpg"
-            alt="an image of gaming"
-            width="300"
-            height="300"
-          />
-        </figure>
-        <div class="hobby-description">
-          <p>
-            Video games provide an immersive experience, challenge and mastery,
-            and social connection in virtual worlds.
-          </p>
+        <div class="card">
+          <header>
+            <h3 class="text-lg font-bold underline decoration-primary-200">
+              Gaming 🎮
+            </h3>
+          </header>
+          <figure>
+            <img
+              src="/src/images/Controller.jpg"
+              alt="an image of gaming"
+              class="w-82 h-82"
+            />
+          </figure>
+          <div>
+            <p class="text-gray-300">
+              Video games provide an immersive experience, challenge and
+              mastery, and social connection in virtual worlds.
+            </p>
+          </div>
         </div>
       </div>
     </main>
