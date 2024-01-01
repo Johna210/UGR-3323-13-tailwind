@@ -1,158 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About me</title>
-    <link rel="stylesheet" href="/src/CSS/styles.css" />
-  </head>
-  <body class="bg-primary-100 text-gray-100">
-    <nav
-      class="m-5 grid grid-cols-3 lg:flex lg:justify-between sticky top-0 bg-primary-100"
-    >
-      <h3 class="font-bold text-3xl col-span-1">
-        <span class="text-primary-200 font-logo">Y</span>ohannes
-      </h3>
-
-      <div class="col-start-3 flex justify-end items-center" id="burger">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="26"
-          width="26"
-          viewBox="0 0 448 512"
-          class="fill-primary-200 cursor-pointer lg:hidden"
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About me</title>
+        <link rel="stylesheet" href="CSS/styles.css" />
+    </head>
+    <body class="bg-primary-100 text-gray-100">
+        <nav
+            class="m-5 grid grid-cols-3 lg:flex lg:justify-between sticky top-0 bg-primary-100"
         >
-          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-          <path
-            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-          />
-        </svg>
-      </div>
-      <ul
-        class="mt-4 col-start-2 leading-10 self-center place-self-center font-nav hidden lg:flex lg:items-center lg:gap-5"
-        id="menu"
-      >
-        <li>
-          <a
-            class="hover:text-primary-200 text-neutral-300"
-            href="/src/index.html"
-            >Home</a
-          >
-        </li>
-        <li>
-          <a
-            class="hover:text-primary-200 text-neutral-300"
-            href="/src/aboutme.html"
-            >About me</a
-          >
-        </li>
-        <li>
-          <a
-            class="hover:text-primary-200 text-neutral-300"
-            href="/src/portfolio.html"
-            >Portfolio</a
-          >
-        </li>
-        <li>
-          <a
-            class="hover:text-primary-200 text-neutral-300"
-            href="/src/resume.html"
-            >Resume</a
-          >
-        </li>
-        <li>
-          <a
-            class="hover:text-primary-200 text-neutral-300"
-            href="/src/hobbies.html"
-            >Hobbies</a
-          >
-        </li>
-        <li>
-          <a
-            class="hover:text-primary-200 text-neutral-300"
-            href="/src/contact.html"
-            >Contact</a
-          >
-        </li>
-      </ul>
-    </nav>
-
-    <main class="mx-10">
-      <article
-        class="flex flex-col md:grid md:grid-cols-2 gap-5 md:auto-rows-min"
-      >
-        <h1
-          class="self-center text-primary-200 text-3xl font-bold md:pl-20 col-start-1 col-end-2 mb-16 mt-10 font-logo"
-        >
-          About me
-        </h1>
-        <img
-          src="/src/images/photo.jpg"
-          alt="profile image"
-          class="w-64 h:64 md:w-82 md:h-82 col-start-2 col-end-3 row-start-2 row-end-4 self-center md:self-start md:mt-10 rounded-sm"
-        />
-        <p class="col-start-1 col-end-2 h-fit">
-          I am a passionate and experienced full-stack web developer with a
-          knack for crafting user-centric, high-quality web applications. My
-          expertise spans the entire development lifecycle, from conception to
-          deployment, encompassing both front-end and back-end technologies. I
-          am proficient in a diverse range of development tools and frameworks,
-          enabling me to tackle projects of varying complexities.
-        </p>
-
-        <section class="col-start-1 col-end-2">
-          <div>
-            <h3 class="text-lg font-bold underline decoration-primary-200 mb-2">
-              Skills
+            <h3 class="font-bold text-3xl col-span-1">
+                <span class="text-primary-200 font-logo">Y</span>ohannes
             </h3>
-            <ul
-              class="mb-5 text-md leading-relaxed list-disc marker:text-primary-200"
-            >
-              <li>Programming Languages: Python, Java, JavaScript, C</li>
-              <li>Front-end development: HTML, CSS, JavaScript, React</li>
-              <li>Back-end development: Node.js, Express</li>
-              <li>Database development: SQL, MySQL, PostgreSQL</li>
-              <li>Version control: Git</li>
-              <li>Problem-solving</li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="text-lg font-bold underline decoration-primary-200">
-              Experience
-            </h3>
-            <ul
-              class="mb-5 text-md leading-relaxed list-disc marker:text-primary-200"
-            >
-              <li>Over 2 years of experience as a full-stack web developer.</li>
-              <li>
-                Worked on a variety of projects ranging from small to enterprise
-                applications.
-              </li>
-              <li>
-                I also had the opportunity to work with a variety of clients,
-                including startups and non-profits.
-              </li>
-            </ul>
-          </div>
 
-          <div>
-            <h3 class="text-lg font-bold underline decoration-primary-200">
-              Education
-            </h3>
+            <div class="col-start-3 flex justify-end items-center" id="burger">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="26"
+                    width="26"
+                    viewBox="0 0 448 512"
+                    class="fill-primary-200 cursor-pointer lg:hidden"
+                >
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                    <path
+                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                    />
+                </svg>
+            </div>
             <ul
-              class="mb-5 text-md leading-relaxed list-disc marker:text-primary-200"
+                class="mt-4 col-start-2 leading-10 self-center place-self-center font-nav hidden lg:flex lg:items-center lg:gap-5"
+                id="menu"
             >
-              <li>Primary School - Ethio National School</li>
-              <li>Secondary School - Ethio National School</li>
-              <li>
-                BSc in Software Engineering - Addis Ababa Institue of
-                Technology(AAU)
-              </li>
+                <li>
+                    <a
+                        class="hover:text-primary-200 text-neutral-300"
+                        href="index.html"
+                        >Home</a
+                    >
+                </li>
+                <li>
+                    <a
+                        class="hover:text-primary-200 text-neutral-300"
+                        href="aboutme.html"
+                        >About me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        class="hover:text-primary-200 text-neutral-300"
+                        href="portfolio.html"
+                        >Portfolio</a
+                    >
+                </li>
+                <li>
+                    <a
+                        class="hover:text-primary-200 text-neutral-300"
+                        href="resume.html"
+                        >Resume</a
+                    >
+                </li>
+                <li>
+                    <a
+                        class="hover:text-primary-200 text-neutral-300"
+                        href="hobbies.html"
+                        >Hobbies</a
+                    >
+                </li>
+                <li>
+                    <a
+                        class="hover:text-primary-200 text-neutral-300"
+                        href="contact.html"
+                        >Contact</a
+                    >
+                </li>
             </ul>
-          </div>
-        </section>
-      </article>
-    </main>
-    <script src="/src/JS/index.js"></script>
-  </body>
+        </nav>
+
+        <main class="mx-10">
+            <article
+                class="flex flex-col md:grid md:grid-cols-2 gap-5 md:auto-rows-min"
+            >
+                <h1
+                    class="self-center text-primary-200 text-3xl font-bold md:pl-20 col-start-1 col-end-2 mb-16 mt-10 font-logo"
+                >
+                    About me
+                </h1>
+                <img
+                    src="images/photo.jpg"
+                    alt="profile image"
+                    class="w-64 h:64 md:w-82 md:h-82 col-start-2 col-end-3 row-start-2 row-end-4 self-center md:self-start md:mt-10 rounded-sm"
+                />
+                <p class="col-start-1 col-end-2 h-fit">
+                    I am a passionate and experienced full-stack web developer
+                    with a knack for crafting user-centric, high-quality web
+                    applications. My expertise spans the entire development
+                    lifecycle, from conception to deployment, encompassing both
+                    front-end and back-end technologies. I am proficient in a
+                    diverse range of development tools and frameworks, enabling
+                    me to tackle projects of varying complexities.
+                </p>
+
+                <section class="col-start-1 col-end-2">
+                    <div>
+                        <h3
+                            class="text-lg font-bold underline decoration-primary-200 mb-2"
+                        >
+                            Skills
+                        </h3>
+                        <ul
+                            class="mb-5 text-md leading-relaxed list-disc marker:text-primary-200"
+                        >
+                            <li>
+                                Programming Languages: Python, Java, JavaScript,
+                                C
+                            </li>
+                            <li>
+                                Front-end development: HTML, CSS, JavaScript,
+                                React
+                            </li>
+                            <li>Back-end development: Node.js, Express</li>
+                            <li>
+                                Database development: SQL, MySQL, PostgreSQL
+                            </li>
+                            <li>Version control: Git</li>
+                            <li>Problem-solving</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3
+                            class="text-lg font-bold underline decoration-primary-200"
+                        >
+                            Experience
+                        </h3>
+                        <ul
+                            class="mb-5 text-md leading-relaxed list-disc marker:text-primary-200"
+                        >
+                            <li>
+                                Over 2 years of experience as a full-stack web
+                                developer.
+                            </li>
+                            <li>
+                                Worked on a variety of projects ranging from
+                                small to enterprise applications.
+                            </li>
+                            <li>
+                                I also had the opportunity to work with a
+                                variety of clients, including startups and
+                                non-profits.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3
+                            class="text-lg font-bold underline decoration-primary-200"
+                        >
+                            Education
+                        </h3>
+                        <ul
+                            class="mb-5 text-md leading-relaxed list-disc marker:text-primary-200"
+                        >
+                            <li>Primary School - Ethio National School</li>
+                            <li>Secondary School - Ethio National School</li>
+                            <li>
+                                BSc in Software Engineering - Addis Ababa
+                                Institue of Technology(AAU)
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <script src="JS/index.js"></script>
+    </body>
 </html>
